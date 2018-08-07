@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>E:\Selenium\workspace2\autoExtent\ExtentReport\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">8 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 1 failed,  3 skipped,  21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestPlaceOrder" hash-for-method="OrderPlace">OrderPlace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestPlaceOrder" hash-for-method="OrderPlaceCheckout">OrderPlaceCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestForgotPassword" hash-for-method="coverStoryCheckoutForgotPassword">coverStoryCheckoutForgotPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestForgotPassword" hash-for-method="coverStoryForgotPassword">coverStoryForgotPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAddCart" hash-for-method="AddToCart">AddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAddCart" hash-for-method="AddToCartQuickview">AddToCartQuickview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAddWishlist" hash-for-method="AddToWishlistPDP">AddToWishlistPDP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAddWishlist" hash-for-method="AddToWishlistPLP">AddToWishlistPLP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAddWishlist" hash-for-method="AddToWishlistQuickviewLogin">AddToWishlistQuickviewLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestBannerClick" hash-for-method="BannerOne">BannerOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestBannerClick" hash-for-method="BannerclickLookBook">BannerclickLookBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestBannerClick" hash-for-method="BannerclickWithLogin">BannerclickWithLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestBannerClick" hash-for-method="BannerclickWithLoginThree">BannerclickWithLoginThree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestBannerClick" hash-for-method="BannerclickWithLoginTwo">BannerclickWithLoginTwo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAccount" hash-for-method="MyAccountChangePassword">MyAccountChangePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAccount" hash-for-method="MyAccountInfo">MyAccountInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAccount" hash-for-method="MyAccountOrderPage">MyAccountOrderPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAccount" hash-for-method="MyAccountSaveAddressPage">MyAccountSaveAddressPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestAddCart" hash-for-method="RemoveFromMinicart">RemoveFromMinicart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestCswLogin" hash-for-method="coverStoryEmailLogin">coverStoryEmailLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestCswLogin" hash-for-method="coverStoryFacebookLogin">coverStoryFacebookLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestCswLogin" hash-for-method="coverStoryOTPLogin">coverStoryOTPLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestCswLogin" hash-for-method="coverStoryPhoneLogin">coverStoryPhoneLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestCswLogin" hash-for-method="coverStorygoogleplusLogin">coverStorygoogleplusLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testcases.TestSearch$TestAccount" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testcases.TestPlaceOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OrderPlace">
+                  </a> <!-- OrderPlace -->
+                  <span class="method-name">OrderPlace</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=68.0.3440.75)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;EMB-BAN-168&apos;, ip: &apos;10.99.90.140&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\EMB-VI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.75, webStorageEnabled: true}
+Session ID: 39d27bc84ce6d9602d47c94bf193dd97
+*** Element info: {Using=xpath, value=//*[@id=&apos;payment-form&apos;]/div[1]/div/div[1]/div[4]/div/div[1]/div/ul/li[1]/div}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.qa.testcases.TestPlaceOrder.OrderPlace(TestPlaceOrder.java:48)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qa.testcases.TestForgotPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="coverStoryCheckoutForgotPassword">
+                  </a> <!-- coverStoryCheckoutForgotPassword -->
+                  <span class="method-name">coverStoryCheckoutForgotPassword</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=68.0.3440.75)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;EMB-BAN-168&apos;, ip: &apos;10.99.90.140&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\EMB-VI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.75, webStorageEnabled: true}
+Session ID: 39d27bc84ce6d9602d47c94bf193dd97
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+	at com.qa.globals.Globals.browserClose(Globals.java:233)
+	at com.qa.globals.Globals.setUp(Globals.java:700)
+	at com.qa.testcases.TestForgotPassword.launchUrl(TestForgotPassword.java:22)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="coverStoryForgotPassword">
+                  </a> <!-- coverStoryForgotPassword -->
+                  <span class="method-name">coverStoryForgotPassword</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=68.0.3440.75)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;EMB-BAN-168&apos;, ip: &apos;10.99.90.140&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\EMB-VI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.75, webStorageEnabled: true}
+Session ID: 39d27bc84ce6d9602d47c94bf193dd97
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+	at com.qa.globals.Globals.browserClose(Globals.java:233)
+	at com.qa.globals.Globals.setUp(Globals.java:700)
+	at com.qa.testcases.TestForgotPassword.launchUrl(TestForgotPassword.java:22)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qa.testcases.TestPlaceOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OrderPlaceCheckout">
+                  </a> <!-- OrderPlaceCheckout -->
+                  <span class="method-name">OrderPlaceCheckout</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=68.0.3440.75)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;EMB-BAN-168&apos;, ip: &apos;10.99.90.140&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\EMB-VI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.75, webStorageEnabled: true}
+Session ID: 39d27bc84ce6d9602d47c94bf193dd97
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+	at com.qa.globals.Globals.browserClose(Globals.java:233)
+	at com.qa.testcases.TestPlaceOrder.closeBrowser(TestPlaceOrder.java:136)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.TestAddWishlist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToWishlistPDP">
+                  </a> <!-- AddToWishlistPDP -->
+                  <span class="method-name">AddToWishlistPDP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToWishlistPLP">
+                  </a> <!-- AddToWishlistPLP -->
+                  <span class="method-name">AddToWishlistPLP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToWishlistQuickviewLogin">
+                  </a> <!-- AddToWishlistQuickviewLogin -->
+                  <span class="method-name">AddToWishlistQuickviewLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.TestCswLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="coverStoryEmailLogin">
+                  </a> <!-- coverStoryEmailLogin -->
+                  <span class="method-name">coverStoryEmailLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="coverStoryFacebookLogin">
+                  </a> <!-- coverStoryFacebookLogin -->
+                  <span class="method-name">coverStoryFacebookLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="coverStoryOTPLogin">
+                  </a> <!-- coverStoryOTPLogin -->
+                  <span class="method-name">coverStoryOTPLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="coverStoryPhoneLogin">
+                  </a> <!-- coverStoryPhoneLogin -->
+                  <span class="method-name">coverStoryPhoneLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="coverStorygoogleplusLogin">
+                  </a> <!-- coverStorygoogleplusLogin -->
+                  <span class="method-name">coverStorygoogleplusLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.TestSearch$TestAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.TestBannerClick</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BannerOne">
+                  </a> <!-- BannerOne -->
+                  <span class="method-name">BannerOne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BannerclickLookBook">
+                  </a> <!-- BannerclickLookBook -->
+                  <span class="method-name">BannerclickLookBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BannerclickWithLogin">
+                  </a> <!-- BannerclickWithLogin -->
+                  <span class="method-name">BannerclickWithLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BannerclickWithLoginThree">
+                  </a> <!-- BannerclickWithLoginThree -->
+                  <span class="method-name">BannerclickWithLoginThree</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BannerclickWithLoginTwo">
+                  </a> <!-- BannerclickWithLoginTwo -->
+                  <span class="method-name">BannerclickWithLoginTwo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.TestAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyAccountChangePassword">
+                  </a> <!-- MyAccountChangePassword -->
+                  <span class="method-name">MyAccountChangePassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyAccountInfo">
+                  </a> <!-- MyAccountInfo -->
+                  <span class="method-name">MyAccountInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyAccountOrderPage">
+                  </a> <!-- MyAccountOrderPage -->
+                  <span class="method-name">MyAccountOrderPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyAccountSaveAddressPage">
+                  </a> <!-- MyAccountSaveAddressPage -->
+                  <span class="method-name">MyAccountSaveAddressPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.TestAddCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToCart">
+                  </a> <!-- AddToCart -->
+                  <span class="method-name">AddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToCartQuickview">
+                  </a> <!-- AddToCartQuickview -->
+                  <span class="method-name">AddToCartQuickview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RemoveFromMinicart">
+                  </a> <!-- RemoveFromMinicart -->
+                  <span class="method-name">RemoveFromMinicart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Selenium\workspace2\autoExtent\ExtentReport\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.extentreportlistener.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testcases.TestCswLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testcases.TestAddCart&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testcases.TestAddWishlist&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testcases.TestBannerClick&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test4 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test5&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testcases.TestSearch&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test5 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test6&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testcases.TestAccount&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test6 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test7&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testcases.TestPlaceOrder&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test7 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test8&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testcases.TestForgotPassword&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test8 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test4 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test5 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test6 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test7 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test8 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'OrderPlace')
+data.setCell(0, 2, 'com.qa.testcases.TestPlaceOrder')
+data.setCell(0, 3, 51491);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddToWishlistQuickviewLogin')
+data.setCell(1, 2, 'com.qa.testcases.TestAddWishlist')
+data.setCell(1, 3, 42847);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'coverStorygoogleplusLogin')
+data.setCell(2, 2, 'com.qa.testcases.TestCswLogin')
+data.setCell(2, 3, 25825);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'BannerclickLookBook')
+data.setCell(3, 2, 'com.qa.testcases.TestBannerClick')
+data.setCell(3, 3, 24075);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'RemoveFromMinicart')
+data.setCell(4, 2, 'com.qa.testcases.TestAddCart')
+data.setCell(4, 3, 23691);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'coverStoryFacebookLogin')
+data.setCell(5, 2, 'com.qa.testcases.TestCswLogin')
+data.setCell(5, 3, 21382);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'AddToWishlistPDP')
+data.setCell(6, 2, 'com.qa.testcases.TestAddWishlist')
+data.setCell(6, 3, 20814);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'BannerclickWithLoginThree')
+data.setCell(7, 2, 'com.qa.testcases.TestBannerClick')
+data.setCell(7, 3, 20448);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'AddToCart')
+data.setCell(8, 2, 'com.qa.testcases.TestAddCart')
+data.setCell(8, 3, 18223);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'AddToCartQuickview')
+data.setCell(9, 2, 'com.qa.testcases.TestAddCart')
+data.setCell(9, 3, 17605);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'AddToWishlistPLP')
+data.setCell(10, 2, 'com.qa.testcases.TestAddWishlist')
+data.setCell(10, 3, 16675);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'MyAccountInfo')
+data.setCell(11, 2, 'com.qa.testcases.TestAccount')
+data.setCell(11, 3, 15353);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'MyAccountSaveAddressPage')
+data.setCell(12, 2, 'com.qa.testcases.TestAccount')
+data.setCell(12, 3, 13765);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'BannerclickWithLogin')
+data.setCell(13, 2, 'com.qa.testcases.TestBannerClick')
+data.setCell(13, 3, 13468);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'BannerclickWithLoginTwo')
+data.setCell(14, 2, 'com.qa.testcases.TestBannerClick')
+data.setCell(14, 3, 12563);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'search')
+data.setCell(15, 2, 'com.qa.testcases.TestSearch$TestAccount')
+data.setCell(15, 3, 11750);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'coverStoryOTPLogin')
+data.setCell(16, 2, 'com.qa.testcases.TestCswLogin')
+data.setCell(16, 3, 11659);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'coverStoryEmailLogin')
+data.setCell(17, 2, 'com.qa.testcases.TestCswLogin')
+data.setCell(17, 3, 10387);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'coverStoryPhoneLogin')
+data.setCell(18, 2, 'com.qa.testcases.TestCswLogin')
+data.setCell(18, 3, 10346);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'BannerOne')
+data.setCell(19, 2, 'com.qa.testcases.TestBannerClick')
+data.setCell(19, 3, 1921);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'MyAccountOrderPage')
+data.setCell(20, 2, 'com.qa.testcases.TestAccount')
+data.setCell(20, 3, 1695);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'MyAccountChangePassword')
+data.setCell(21, 2, 'com.qa.testcases.TestAccount')
+data.setCell(21, 3, 930);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'OrderPlaceCheckout')
+data.setCell(22, 2, 'com.qa.testcases.TestPlaceOrder')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'coverStoryCheckoutForgotPassword')
+data.setCell(23, 2, 'com.qa.testcases.TestForgotPassword')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'coverStoryForgotPassword')
+data.setCell(24, 2, 'com.qa.testcases.TestForgotPassword')
+data.setCell(24, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">coverStoryPhoneLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Phone : Login Icon clicked</span>
+                <span class="reporter-method-output">Phone :Login button clicked</span>
+                <span class="reporter-method-output">Phone Number Login: Phone number entered</span>
+                <span class="reporter-method-output">Phone Number Login :Password entered</span>
+                <span class="reporter-method-output">Phone :Login using phone number is successful</span>
+                <span class="reporter-method-output">Email :Login Icon clicked</span>
+                <span class="reporter-method-output">Email: Login success</span>
+                <span class="reporter-method-output">Email : Login Icon clicked</span>
+                <span class="reporter-method-output">Email :signout using Email number is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">coverStoryOTPLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Phone : Login Icon clicked</span>
+                <span class="reporter-method-output">Phone :Login button clicked</span>
+                <span class="reporter-method-output">Login with OTP: Phone number entered</span>
+                <span class="reporter-method-output">OTP sent</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">coverStoryFacebookLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Facebook : Login Icon clicked</span>
+                <span class="reporter-method-output">Facebook : Login button clicked</span>
+                <span class="reporter-method-output">Facebook : signinFacebook button clicked</span>
+                <span class="reporter-method-output">Email :Login Icon clicked</span>
+                <span class="reporter-method-output">Email: Login success</span>
+                <span class="reporter-method-output">Email : Login Icon clicked</span>
+                <span class="reporter-method-output">Email :signout using Email number is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">coverStoryEmailLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Email : Login Icon clicked</span>
+                <span class="reporter-method-output">Email :Login button clicked</span>
+                <span class="reporter-method-output">Email :Email entered</span>
+                <span class="reporter-method-output">Email :Password entered</span>
+                <span class="reporter-method-output">Email :Login Icon clicked</span>
+                <span class="reporter-method-output">Email: Login success</span>
+                <span class="reporter-method-output">Email : Login Icon clicked</span>
+                <span class="reporter-method-output">Email :signout using Email number is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">coverStorygoogleplusLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">GooglePlus : Login Icon clicked</span>
+                <span class="reporter-method-output">GooglePlus :Login button clicked</span>
+                <span class="reporter-method-output">GooglePlus :signinGooglePlus button clicked</span>
+                <span class="reporter-method-output">GooglePlus :emailAndPhoneSignin button clicked</span>
+                <span class="reporter-method-output">GooglePlus :nextButtonSignin button clicked</span>
+                <span class="reporter-method-output">GooglePlus :gmailSigninButton button clicked</span>
+                <span class="reporter-method-output">GooglePlus :loginIcon button clicked</span>
+                <span class="reporter-method-output">Email :Login Icon clicked</span>
+                <span class="reporter-method-output">Email: Login success</span>
+                <span class="reporter-method-output">Email : Login Icon clicked</span>
+                <span class="reporter-method-output">Email :signout using Email number is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddToCartQuickview</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Item added to cart</span>
+                <span class="reporter-method-output">quick view window closed</span>
+                <span class="reporter-method-output">Cart icon clicked</span>
+                <span class="reporter-method-output">View cart button clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">RemoveFromMinicart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Item added to mini cart successfully</span>
+                <span class="reporter-method-output">Item removed from mini cart successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddToWishlistQuickviewLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login successful</span>
+                <span class="reporter-method-output">Wishlist section opened successful</span>
+                <span class="reporter-method-output">Quickview window opened successful</span>
+                <span class="reporter-method-output">Item added to cart successful</span>
+                <span class="reporter-method-output">Wishlist section opened successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BannerclickWithLoginTwo</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">NewIn Banner clicked with Login</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BannerclickWithLoginThree</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">NewIn Banner clicked with Login</span>
+                <span class="reporter-method-output">NewIn Banner clicked with Login</span>
+                <span class="reporter-method-output">NewIn Banner clicked with Login</span>
+                <span class="reporter-method-output">NewIn Banner clicked with Login</span>
+                <span class="reporter-method-output">NewIn Banner clicked with Login</span>
+                <span class="reporter-method-output">NewIn Banner clicked with Login</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BannerOne</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Banner clicked without Login</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BannerclickWithLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Banner click with Login</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BannerclickLookBook</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">LookBook1 Banner clicked with Login</span>
+                <span class="reporter-method-output">LookBook2 Banner clicked with Login</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">search</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Search result for shorts success with login</span>
+                <span class="reporter-method-output">Search result for jeans success with login</span>
+                <span class="reporter-method-output">Email :Login Icon clicked</span>
+                <span class="reporter-method-output">Email :signout using Email number is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">MyAccountInfo</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Account : loginIcon button clicked</span>
+                <span class="reporter-method-output">Account : MyAccount button clicked</span>
+                <span class="reporter-method-output">Account : editProfileButton button clicked</span>
+                <span class="reporter-method-output">First name successfully edited</span>
+                <span class="reporter-method-output">Last name successfully edited</span>
+                <span class="reporter-method-output">Account : saveProfileButton button clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">MyAccountSaveAddressPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Account : mySavedAddress button clicked</span>
+                <span class="reporter-method-output">Account : openAddNewAddress button clicked</span>
+                <span class="reporter-method-output">Account : firstNameAddNewAddress button clicked</span>
+                <span class="reporter-method-output">Account : LastNameAddNewAddress button clicked</span>
+                <span class="reporter-method-output">Account : pincodeAddNewAddress button clicked</span>
+                <span class="reporter-method-output">Account : address1AddNewAddress button clicked</span>
+                <span class="reporter-method-output">Account : phoneAddNewAddress button clicked</span>
+                <span class="reporter-method-output">Account : saveAddressInAddNewAddress button clicked</span>
+                <span class="reporter-method-output">Account : deleteAddress button clicked</span>
+                <span class="reporter-method-output">Account : deleteAddressconfirm button clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">MyAccountChangePassword</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Account : changeAccountPasswordButton button clicked</span>
+                <span class="reporter-method-output">Account : newPasswordBox button clicked</span>
+                <span class="reporter-method-output">Account : confirmPasswordBox button clicked</span>
+                <span class="reporter-method-output">Account : savePasswordButton button clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestCswLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">url_launch</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">coverStoryEmailLogin</span>
+                <span class="method-start">23874 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">coverStoryPhoneLogin</span>
+                <span class="method-start">34265 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">coverStorygoogleplusLogin</span>
+                <span class="method-start">44613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">coverStoryFacebookLogin</span>
+                <span class="method-start">70439 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">coverStoryOTPLogin</span>
+                <span class="method-start">91822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">103483 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestAddCart</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchUrl</span>
+                <span class="method-start">106449 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">RemoveFromMinicart</span>
+                <span class="method-start">124961 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddToCart</span>
+                <span class="method-start">148655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddToCartQuickview</span>
+                <span class="method-start">166881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">184487 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestAddWishlist</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchURL</span>
+                <span class="method-start">187218 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddToWishlistQuickviewLogin</span>
+                <span class="method-start">215955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddToWishlistPLP</span>
+                <span class="method-start">258804 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddToWishlistPDP</span>
+                <span class="method-start">275481 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">296297 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestBannerClick</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchUrl</span>
+                <span class="method-start">297064 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">BannerOne</span>
+                <span class="method-start">330231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BannerclickWithLogin</span>
+                <span class="method-start">332153 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BannerclickWithLoginTwo</span>
+                <span class="method-start">345622 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BannerclickWithLoginThree</span>
+                <span class="method-start">358186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BannerclickLookBook</span>
+                <span class="method-start">378635 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">402711 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestSearch$TestAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchUrl</span>
+                <span class="method-start">403581 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">search</span>
+                <span class="method-start">432447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">444198 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchUrl</span>
+                <span class="method-start">447154 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">MyAccountInfo</span>
+                <span class="method-start">476756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MyAccountChangePassword</span>
+                <span class="method-start">492110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MyAccountOrderPage</span>
+                <span class="method-start">493042 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MyAccountSaveAddressPage</span>
+                <span class="method-start">494740 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">508506 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestPlaceOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchUrl</span>
+                <span class="method-start">511459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">OrderPlace</span>
+                <span class="method-start">529032 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">580526 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestForgotPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchUrl</span>
+                <span class="method-start">580873 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestPlaceOrder</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">OrderPlaceCheckout</span>
+                <span class="method-start">-1532696433263 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.TestForgotPassword</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">coverStoryForgotPassword</span>
+                <span class="method-start">-1532696433263 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">coverStoryCheckoutForgotPassword</span>
+                <span class="method-start">-1532696433263 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

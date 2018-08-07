@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 27 18:30:33 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>106 seconds (106430 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testcases.TestCswLogin.coverStoryEmailLogin()'><b>coverStoryEmailLogin</b><br>Test class: com.qa.testcases.TestCswLogin<br/>
+<a href="#Output-87060781" onClick='toggleBox("Output-87060781", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-87060781" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-87060781">
+Email : Login Icon clicked<br/>
+Email :Login button clicked<br/>
+Email :Email entered<br/>
+Email :Password entered<br/>
+Email :Login Icon clicked<br/>
+Email: Login success<br/>
+Email : Login Icon clicked<br/>
+Email :signout using Email number is successful<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.qa.testcases.TestCswLogin@4ae82894</td></tr>
+<tr>
+<td title='com.qa.testcases.TestCswLogin.coverStoryFacebookLogin()'><b>coverStoryFacebookLogin</b><br>Test class: com.qa.testcases.TestCswLogin<br/>
+<a href="#Output-630537190" onClick='toggleBox("Output-630537190", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-630537190" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-630537190">
+Facebook : Login Icon clicked<br/>
+Facebook : Login button clicked<br/>
+Facebook : signinFacebook button clicked<br/>
+Email :Login Icon clicked<br/>
+Email: Login success<br/>
+Email : Login Icon clicked<br/>
+Email :signout using Email number is successful<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.qa.testcases.TestCswLogin@4ae82894</td></tr>
+<tr>
+<td title='com.qa.testcases.TestCswLogin.coverStoryOTPLogin()'><b>coverStoryOTPLogin</b><br>Test class: com.qa.testcases.TestCswLogin<br/>
+<a href="#Output-2009979916" onClick='toggleBox("Output-2009979916", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2009979916" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2009979916">
+Phone : Login Icon clicked<br/>
+Phone :Login button clicked<br/>
+Login with OTP: Phone number entered<br/>
+OTP sent<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.qa.testcases.TestCswLogin@4ae82894</td></tr>
+<tr>
+<td title='com.qa.testcases.TestCswLogin.coverStoryPhoneLogin()'><b>coverStoryPhoneLogin</b><br>Test class: com.qa.testcases.TestCswLogin<br/>
+<a href="#Output-730583371" onClick='toggleBox("Output-730583371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-730583371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-730583371">
+Phone : Login Icon clicked<br/>
+Phone :Login button clicked<br/>
+Phone Number Login: Phone number entered<br/>
+Phone Number Login :Password entered<br/>
+Phone :Login using phone number is successful<br/>
+Email :Login Icon clicked<br/>
+Email: Login success<br/>
+Email : Login Icon clicked<br/>
+Email :signout using Email number is successful<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.qa.testcases.TestCswLogin@4ae82894</td></tr>
+<tr>
+<td title='com.qa.testcases.TestCswLogin.coverStorygoogleplusLogin()'><b>coverStorygoogleplusLogin</b><br>Test class: com.qa.testcases.TestCswLogin<br/>
+<a href="#Output-408543908" onClick='toggleBox("Output-408543908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-408543908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-408543908">
+GooglePlus : Login Icon clicked<br/>
+GooglePlus :Login button clicked<br/>
+GooglePlus :signinGooglePlus button clicked<br/>
+GooglePlus :emailAndPhoneSignin button clicked<br/>
+GooglePlus :nextButtonSignin button clicked<br/>
+GooglePlus :gmailSigninButton button clicked<br/>
+GooglePlus :loginIcon button clicked<br/>
+Email :Login Icon clicked<br/>
+Email: Login success<br/>
+Email : Login Icon clicked<br/>
+Email :signout using Email number is successful<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.qa.testcases.TestCswLogin@4ae82894</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.qa.extentreportlistener.ExtentReporterNG" />
+	</listeners>
+	<test thread-count="5" name="Test1">
+		<classes>
+		    <class name="com.qa.testcases.TestCswLogin" />  	          	
+		</classes>		
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test2">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestAddCart" />            	
+		</classes>		
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test3">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestAddWishlist" />            	
+		</classes>		
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test4">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestBannerClick" />            	
+		</classes>		
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test5">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestSearch" />            	
+		</classes>		
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test6">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestAccount" />            	
+		</classes>		
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test7">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestPlaceOrder" />            	
+		</classes>		
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test8">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestForgotPassword" />            	
+		</classes>		
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
